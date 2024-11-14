@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    
+    border-spacing: 10px;
+}
+ table , th , td {
+    padding: 8px ;
+    border:  2px solid brown;
+}
+th, td{
+    height: 40px;
+}
+
+img {
+    margin-right: 200px;
+}
