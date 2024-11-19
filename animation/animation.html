@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            div:hover{
+                animation-name: animate-one;
+                animation-duration: 5s;
+            }
+            @keyframes animate-one{
+                0%{
+                    background-color: yellow;
+                }
+                100%{
+                    background-color: aqua;
+                }
+            }
+
+            .abc{
+                width: 2500px;
+                height: 205px;
+                margin: 50px;
+                background: url(emo1.jpg) no-repeat;
+                position: relative;
+
+              animation-name: moving;
+              animation-duration: 2s;
+              animation-timing-function: ease-in;
+            }
+            @keyframes moving{
+               from{transform: rotate(-45deg);}
+               to{
+                transform: rotate(35deg);
+               }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1><center>Animation </center></h1>
+        <p>Let see the Animation !!!!</p>
+    </div>
+</br>
+</br>
+    <div class="abc">
+        <p> Animation with timing function </p>
+
+
+    </div>
+    </body>
+</html>

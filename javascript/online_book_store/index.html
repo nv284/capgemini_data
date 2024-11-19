@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Book Store</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Online Book Store</h1>
+
+    <!-- Registration Form -->
+    <div id="registerForm">
+      <h2 class="text-center">Register</h2>
+      <form id="registrationForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="age" class="form-label">Age</label>
+          <input type="number" id="age" class="form-control" placeholder="Enter your age" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label for="categories" class="form-label">Select Book Categories</label>
+          <select id="categories" class="form-select" multiple required>
+            <option>Fiction</option>
+            <option>Non-Fiction</option>
+            <option>Novels</option>
+            <option>Kids Education</option>
+            <option>Science</option>
+            <option>Technology</option>
+            <option>Magazines</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="registerUser()">Register</button>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="d-none">
+      <h2 class="text-center">Login</h2>
+      <form id="login">
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email</label>
+          <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <button type="button" class="btn btn-success" onclick="loginUser()">Login</button>
+      </form>
+    </div>
+
+    <!-- Book Categories Display -->
+    <div id="bookCategories" class="d-none">
+      <h2 class="text-center">Books in Your Selected Categories</h2>
+      <ul id="categoryList" class="list-group"></ul>
+      <button class="btn btn-danger mt-3" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

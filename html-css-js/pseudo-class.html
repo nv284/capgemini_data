@@ -1,0 +1,38 @@
+:<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo-class Demo</title>
+        <style>
+            a.link{
+                color: blue;
+            }
+            a:visited{
+                color:black;
+            }
+            a.high-color{
+                font-family: Arial, Helvetica, sans-serif;
+                color: blue;
+                font-style: oblique;
+            }
+            div{
+                background-color: aqua;
+                text-align: justify;
+            }
+            div:hover{
+                font-size: x-large;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Pseudo-class with Simple Html</h1>
+        <p> When you hover the mouse over the given first link it may show some function </p>
+
+        <p><a class="high-color" href="https://www.w3schools.com/Js/js_function_call.asp"> Call Function </a></p>
+        <p><a class="new-color" href="https://www.w3schools.com/Js/js_functions.asp"> Arraow Function </a></p>
+
+        <div>
+            <p>This is magic</p>
+        </div>
+    </body>
+</html>

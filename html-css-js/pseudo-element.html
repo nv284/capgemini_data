@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pseudo-element</title>
+        <style>
+     h2::before{
+        content: url(emo1.jpg);
+     }
+     #demo{
+        width: 98px;
+        height: 98px;
+        background: purple;
+     }
+     #demo::before{
+        height: 0;
+width: 38px;
+content:"";
+position: absolute;
+border-bottom: 28px solid purple;
+border-left: 28px solid blue;
+border-right: 28px solid yellow;
+     }
+     #demo::after{
+        height: 0;
+width: 38px;
+content:"";
+position: absolute;
+border-top: 28px solid purple;
+border-left: 29px solid blue;
+border-right: 29px solid yellow;
+margin: 10px 0 0 0;
+       
+     }
+#a::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 4em;
+    font-style: italic;
+    color: brown;
+}
+
+#b::first-line{
+    font-family: Forte;
+font-weight: bold;
+font-size: 2em;
+font-style: italic;
+color: orange;
+}
+
+#c::selection{
+    color: grey;
+background: red;
+}
+        </style>
+    </head>
+
+    <body>
+<h1><center>Pseudo Element</center></h1>
+<h2>Let's use Pseudo Eelment on our web Page !!!!!!</h2>
+<p>Display Png image before a paragraph content</p>
+
+
+<div id="demo">
+    <p>After the picture a paragraph is allowed</p>
+</div>
+
+<div>
+    <h1>India's Top Books</h1>
+<p id="a"> Top Books is like Ramayan ,Geeta </p>
+</div>
+
+<div>
+    <h1>COVID-19 Article</h1>
+    <p>First Line pseudo-element</p>
+<p id="b">Top- COVID-19 is defined as illnesss caused byvirus which attacks respiratry Syndrome. And experts and Scientists are deeply into a research to identify a vaccine to recover.</p>
+</div>
+
+<div>
+    <h3>Selector pseudo-element</h3>
+    <p id="c">Comics are a great fun And the first nivel Appeared in the Year 1978 and it deals with the current affairs of the world</p>
+</div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <style>
+            .container{
+                display: flex;
+                gap:0.5rem;
+                flex-direction: column;
+            }
+            button{
+                width: 200px;
+                columns: lightblue ;
+            }
+        </style>
+        <script type="text/javascript">
+         function validate() {  
+var msg;  
+if(document.myForm.userPass.value.length>5){  
+msg="good";  
+}  
+else{  
+msg="poor";  
+}  
+document.getElementById('mylocation').innerText=msg;  
+ }  
+ function newContent(){
+    document.open();
+    document.write("<h1>Out with the old , in with the new!!!!!</h1>");
+    document.close();
+ }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+<textarea class="story"></textarea>
+<button id="set-text" type="button">Set text content</button>
+<button id="clear-text" type="button">Clear text content </button>
+        </div>
+
+        <div>
+            <form name="myForm">
+                <input type="password" value="" name="userPass" onkeyup="validate()">
+                Strength:<span id="mylocation">no strength</span>
+                </form>
+                </div>
+                <hr>
+                <div>
+<p>Some original document content !!!!</p>
+<button onclick="newContent()">Change content</button>
+                </div>
+    </body>
+</html>
