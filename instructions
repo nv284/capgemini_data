@@ -1,0 +1,14 @@
+installation 
+package registry 
+package json 
+command : 
+
+npm init -> create new package.json file for the project 
+
+npm install <package-name > 
+
+npm uninstall<package-name >
+
+npm uodate 
+
+npm run <script name>

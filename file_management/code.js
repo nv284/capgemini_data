@@ -25,6 +25,10 @@ class FileManager {
     try {
       const fileInput = document.getElementById("fileInput");
       const uploadedFile = fileInput.files[0];
+      /*fileInput.file is a FileList  object that contains file selected by the user 
+        .files[0] accesses the first file selected (in case multiple files are selected , but here we are considering only first one )
+        
+        The uploadedFile now refers to the selected file , which is a file  object contaning properties like name or whatever . */
       if (!uploadedFile) throw new Error("No file selected for upload.");
 
       const file = { name: uploadedFile.name, content: "Uploaded content" };
