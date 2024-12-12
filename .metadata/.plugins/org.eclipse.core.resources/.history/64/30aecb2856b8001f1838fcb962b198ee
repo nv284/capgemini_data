@@ -1,0 +1,36 @@
+package pack.cap.module5.module4;
+// Types of relationship among classes 
+/* Dependence(Uses-A)       Association(Has-A)       Inheritance(Is-A)*/
+
+class Product{
+	String productName; double price;
+
+	public Product(String productName, double price) {
+		super();
+		this.productName = productName;
+		this.price = price;
+	}
+	public void dispProduct() {
+		System.out.println("Product Name : "+productName);
+		System.out.println("Price $ :"+ price);
+	}
+}
+
+class Customer1{
+	String name ;
+	int customerId; 
+}
+
+
+
+
+
+
+public class Uses_A_dependancy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package pack.cap.module5.module4;
+
+class BankAccount{
+	String accountNumber;
+	double balance;
+	public BankAccount(String accountNumber, double balance) {
+		super();
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+	}
+	public void deposit(double amount) {
+		
+	}
+	public void withDraw(double amount ) {
+		
+	}
+}
+
+
+public class Gen_Spe_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

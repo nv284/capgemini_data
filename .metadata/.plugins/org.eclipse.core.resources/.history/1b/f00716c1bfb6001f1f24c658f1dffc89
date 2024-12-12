@@ -1,0 +1,21 @@
+package pack.cap.module2.oop;
+//one -to - one Association 
+
+class Passport {
+	
+}
+class Person {
+	private String name ; 
+	private Pass
+	
+}
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

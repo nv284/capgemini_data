@@ -1,0 +1,16 @@
+package pack.cap.module5.module4;
+
+class BankAccount{
+	String accountNumber;
+	double balance;
+}
+
+
+public class Gen_Spe_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

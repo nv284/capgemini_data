@@ -1,0 +1,9 @@
+package pack.cap.module4.accessM;
+
+public class Demo_A {
+private int data = 50;
+
+private void call() {
+	System.out.println("Hello Access Modifiers !!!");
+}
+}

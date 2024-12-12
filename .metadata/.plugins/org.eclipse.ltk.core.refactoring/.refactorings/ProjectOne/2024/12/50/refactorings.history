@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;pack.cap.module4.accessM.InnerClass_Demo&apos; to &apos;OuterClass&apos;&#x0D;&#x0A;- Original project: &apos;ProjectOne&apos;&#x0D;&#x0A;- Original element: &apos;pack.cap.module4.accessM.InnerClass_Demo&apos;&#x0D;&#x0A;- Renamed element: &apos;pack.cap.module4.accessM.OuterClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InnerClass_Demo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;pack.cap.module4.accessM{InnerClass_Demo.java[InnerClass_Demo" matchStrategy="1" name="OuterClass" qualified="false" references="true" similarDeclarations="false" stamp="1733918587981" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,30 @@
+package pack.cap.module5.module4;
+class College{
+	public void collegeName() {
+		System.out.println("Name of the college is ABCD");
+	}
+	void estYear() {
+		System.out.println("It was established in 2000");
+	}
+}
+
+
+class MyCollege extends College{
+
+	@Override
+	void estYear() {
+		// TODO Auto-generated method stub
+		super.estYear();
+		System.out.println("It was extablished in 2001 ");
+	}
+	
+	
+}
+public class Overriding_Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

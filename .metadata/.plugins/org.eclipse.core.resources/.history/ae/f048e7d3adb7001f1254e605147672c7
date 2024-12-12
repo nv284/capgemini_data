@@ -1,0 +1,25 @@
+package pack.cap.module3.ctrl_stmt;
+/*
+ * Local Block 
+ * instance Block 
+ * Static Block 
+ * */
+public class TypesOfBlock {
+
+       TypesOfBlock() {
+		super();
+		System.out.println("0-arg constructor ");
+	}
+       //instance block 
+       {
+    	   System.out.println("Instance Block ...");
+       }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        TypesOfBlock t = new TypesOfBlock();
+       
+        
+	}
+
+}

@@ -1,0 +1,26 @@
+package pack.cap.module3.ctrl_stmt;
+
+/*
+ * modifier return-type method-name (parameter list ){method-body}  
+ * predefined methods 
+ * user-defined methods --> instance methods , static methods 
+ * */
+
+
+public class MethodDemo {
+
+	String Brand ; String model; int year ;
+	
+	public MethodDemo(String brand, String model, int year) {
+		super();
+		Brand = brand;
+		this.model = model;
+		this.year = year;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

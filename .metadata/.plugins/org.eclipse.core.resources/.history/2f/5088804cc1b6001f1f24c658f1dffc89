@@ -1,0 +1,43 @@
+package pack.cap.module2.oop;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class Student{
+	private String name;
+
+	public Student(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	} 
+}
+
+class Teacher{
+	
+	private String name;
+	private List<Student> stu; // one to many association
+	public Teacher(String name) {
+		super();
+		this.name = name;
+		this.stu = new ArrayList<Student>();
+	}
+	
+	
+}
+
+
+
+
+
+public class OneToManyAssociation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

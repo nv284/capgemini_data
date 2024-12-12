@@ -1,0 +1,17 @@
+package pack.cap.module4.accessM;
+
+public class Demo_A {
+	
+	  private int data = 50;
+	  String name ; int age ;
+            private Demo_A() {
+		         super();
+	            	// TODO Auto-generated constructor stub
+	                }
+
+   
+
+              private void call() {
+	        System.out.println("Hello Access Modifiers !!!");
+                    }
+}

@@ -1,0 +1,25 @@
+package pack.cap.module5.module4;
+//E shopping- sellers , customers , admins 
+class User {
+	
+}
+
+class Customer {
+	
+}
+
+class Seller {
+	
+}
+
+class Admin{
+	
+}
+public class Hierarchical_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package pack.cap.module4.accessM;
+/*
+ * Non-static Nested class , static nested class , local class , anonymous class 
+ * */
+public class InnerClass_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package pack.cap.module3.ctrl_stmt;
+
+public class CallByValue {
+	
+	
+	int change(int b) {
+		++b;
+		return b; // return statement 
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

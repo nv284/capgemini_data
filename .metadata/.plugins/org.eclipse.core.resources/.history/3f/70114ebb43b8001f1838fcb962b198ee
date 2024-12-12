@@ -1,0 +1,19 @@
+package pack.cap.module5.module4;
+
+class Employee{
+	String name ; int employeeId ; double salary ;
+	
+}
+
+
+class Manager {
+	
+}
+public class SingleInheritance_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

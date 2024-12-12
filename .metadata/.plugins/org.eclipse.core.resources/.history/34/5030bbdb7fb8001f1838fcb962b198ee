@@ -1,0 +1,5 @@
+package pack.cap.module5.module4;
+
+public abstract class Shape {
+
+}

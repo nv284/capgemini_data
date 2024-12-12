@@ -1,0 +1,18 @@
+package pack.cap.module3.ctrl_stmt;
+/*
+ * Local Block 
+ * instance Block 
+ * Static Block 
+ * */
+public class TypesOfBlock {
+
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
