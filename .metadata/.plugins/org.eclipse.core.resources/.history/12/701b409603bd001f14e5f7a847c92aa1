@@ -1,0 +1,27 @@
+package pack.cap.module9.collection;
+
+import java.util.*;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String>
+		
+		
+		
+		
+		
+HashSet<String> set = new HashSet<String>();
+set.add("First");set.add("Second");set.add("Third");set.add("Fourth");set.add("Five");
+System.out.println(set);
+set.add("First");set.add("Five");//duplicate element 
+System.out.println("After adding duplicate ");
+System.out.println(set);
+System.out.println(" add some null ");
+set.add(null);set.add(null);
+System.out.println("after adding null ");
+
+	}
+
+}

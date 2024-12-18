@@ -1,0 +1,21 @@
+package pack.cap.module6.inter;
+
+class A {
+	void m1() {System.out.println("A");}
+}
+class B extends A{
+	void m1() {System.out.println("b");}
+}
+
+class C extends B{
+	void m1() {System.out.println("c");}
+}
+public class Demo {
+	 public void infoStudent(int age, String loc, int phoneNo ) 
+	  { 
+	    
+	  } 
+	 public static void main(String[] args) {
+	 A a = new B();
+	 a.m1();}
+}

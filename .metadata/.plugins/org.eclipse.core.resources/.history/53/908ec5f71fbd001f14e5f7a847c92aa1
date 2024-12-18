@@ -1,0 +1,8 @@
+package pack.cap.module9.collection;
+import java.util.*;
+public class ProductCatalog {
+	
+	private LinkedHashSet<Product> products;
+	
+
+}

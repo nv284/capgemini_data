@@ -1,0 +1,24 @@
+package pack.cap.module8.io;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class PrintWriterAndReaderclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "D:\\sample.txt";
+try {
+	
+	PrintWriter w = new PrintWriter(new File(s));
+	
+	
+}catch (Exception e) {
+	// TODO: handle exception
+	e.printStackTrace();
+}
+	}
+
+}

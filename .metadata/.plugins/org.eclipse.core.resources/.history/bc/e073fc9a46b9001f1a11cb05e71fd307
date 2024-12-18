@@ -1,0 +1,14 @@
+package pack.cap.module7.inter;
+
+public interface PymentMethod {
+	void processPayment(double amount);
+	void applyDiscount(double amount);
+
+}
+
+public interface Store {
+
+	double getDiscount();
+	void checkOut( double amount , Pay)
+}
+

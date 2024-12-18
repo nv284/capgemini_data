@@ -1,0 +1,5 @@
+package pack.cap.module8.io;
+
+public class UserDetailsToFile {
+
+}

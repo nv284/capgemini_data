@@ -1,0 +1,18 @@
+package pack.cap.module9.collection;
+
+import java.util.Vector;
+
+/*Enumeration ---> can create an object of enumeration by calling elements() of vector class. Enumeration e = v.elements()
+ * it has two methods -
+ * 1- public boolean hasNextElement()
+ * 2- public object nextElement()
+ * 
+ * */
+public class EnumerationTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+   Vector v = new Vector();
+	}
+
+}

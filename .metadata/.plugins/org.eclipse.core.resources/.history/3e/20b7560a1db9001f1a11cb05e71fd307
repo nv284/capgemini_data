@@ -1,0 +1,10 @@
+package pack.cap.module6.inter;
+
+public class OneDArrDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

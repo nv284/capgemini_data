@@ -1,0 +1,8 @@
+package pack.cap.module6.inter;
+
+public class Demo {
+	 public void infoStudent(int age, String loc, int phoneNo ) 
+	  { 
+	    
+	  } 
+}

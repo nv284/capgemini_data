@@ -1,0 +1,5 @@
+package pack.cap.module7.inter;
+
+public interface MathOperation {
+
+}

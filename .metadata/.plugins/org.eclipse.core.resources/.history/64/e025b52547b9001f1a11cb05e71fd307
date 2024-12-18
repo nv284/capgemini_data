@@ -1,0 +1,44 @@
+package pack.cap.module7.inter;
+
+
+class HSBC implements PymentMethod{
+
+	@Override
+	public void processPayment(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void applyDiscount(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class Axis implements PymentMethod{
+
+	@Override
+	public void processPayment(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void applyDiscount(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+
+public class PaymentSystem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

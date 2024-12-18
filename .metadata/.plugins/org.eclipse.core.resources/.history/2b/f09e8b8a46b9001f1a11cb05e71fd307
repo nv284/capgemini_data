@@ -1,0 +1,7 @@
+package pack.cap.module7.inter;
+
+public interface Store {
+
+	double getDiscount();
+	void checkOut( double amount , )
+}

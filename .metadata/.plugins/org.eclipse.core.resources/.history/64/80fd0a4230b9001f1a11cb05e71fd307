@@ -1,0 +1,20 @@
+package pack.cap.module6.inter;
+
+public class ReturnArray {
+	
+	
+	public static int[] createArray() {
+		int [] num = {1,2,3,4,5};
+		return num;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        int [] returnArray = createArray();
+        System.out.println("returned array ");
+        for(int i : returnArray) {
+        	System.out.println(i+ " ");
+        }
+	}
+
+}

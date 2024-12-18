@@ -1,0 +1,12 @@
+package pack.cap.module9.collection;
+
+import java.util.Scanner;
+
+public class ExpenseManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(system.in);
+	}
+
+}

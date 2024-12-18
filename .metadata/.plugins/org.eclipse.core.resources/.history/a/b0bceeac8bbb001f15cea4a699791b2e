@@ -1,0 +1,106 @@
+interface - it is a reference type , similar to a class ,can contain only constants and abstract methods .
+            interface A ---extends---> interface B    , interface A ---implements ---- class A
+            
+            flexiblity , readable code , moduler code / loose coupling 
+            
+            
+       uses of interface - 
+       1) Achieving abstraction (100%)
+       2)Multiple inheritance -
+       3)Loose coupling  
+       
+       
+       types of interface - 
+       1- regular interface 
+       2- Default interface (from java 8 -> default methods )
+       3- Static interface ( from java 8 -> static methods)
+       4- functional interface ( from java 8 )
+       
+       interface A {
+       int x = 100; ------compiler add---> public static final int x 
+       void m1();-----------compiler ----> public and abstract 
+       void m2();
+       }
+       ================================
+       Functional interface - SAM (single abstract method )- > Functional interfaces(lambda expression , method ref , streams )
+       1- SAM 
+       2- static and default ( java 8) , private method(java 9) 
+       3- @FunctionalInterface 
+       
+       COMMON FUNCTIONAL INTERFACE IN JAVA - (java.util.function)
+       1- Runnable 
+       2- callable 
+       3- Predicate<T>
+       4- function<T,R>
+       5- Consumer<T>
+       6-Supplier<T>
+       
+       Limitation - 
+       1- Single Abstract method 
+       2- Not suitable for complex interface 
+       3- May lead to loss of interface Purity 
+       4- Can be misused 
+       
+       
+       where is functional interface is suitable ?
+       ------------------------------------------
+       1- pass behavior as Argument
+       2- Collection and streams 
+       3- Simplify code with lambdas 
+       4- Asynchronous or parallel programming  
+       
+       
+       
+       Lambda Expression (java 8)->
+       ----------------------------
+       it is use to anonymous function . short cut to write down the function . it is known as function with out name . 
+       
+       
+       uses 
+       ----
+       1- passing behavior as parameter 
+       2- Implementing functional interface 
+       3- Simplifying code 
+       4- support functional programming 
+       -------------
+       Limitation of Lambda - 
+       1- cannot modify instance variable 
+       2- Single abstract method 
+       3- No support for Multiple Abstract method 
+       4- complex situation could not handle by lambda expression because it make your code more harder 
+       5- cannot use "this" in the same way  
+       
+       
+       ======================================================
+       Streams --> Java8 
+       -----------------
+       Java 8 introduced the Stream API, which allows you to process sequences of elements (e.g., collections, arrays, etc.) 
+       in a functional way. A Stream is a sequence of elements that supports various methods to perform computations on those elements, 
+       such as filtering, mapping, and reducing, among others.
+        Streams allow for functional-style programming in Java, enabling you to write concise and expressive code, often eliminating 
+        the need for explicit iteration with for loops.
+       
+       methods of stream ->
+       -------------------
+       Filter , sort ,  Match , Max , Min, GroupBy function , Map , FlateMap , builder 
+       
+       Stream - A sequence of elements and it support parallel and sequential aggregate operation 
+       it support functional programming by allowing you to express transformations on data with consice , declarative code .
+       
+       types of streams 
+       ==================
+       1- sequential stream 
+       2- Parallel stream 
+       
+       Stream operation 
+       =============
+       1- intermediate operation - filter() , map(), distinct() , sorted (), limit()
+       
+       2- Terminal operation - collect() , forEach() , reduce(), count() , sum()
+       
+       
+       
+       
+        
+       
+       

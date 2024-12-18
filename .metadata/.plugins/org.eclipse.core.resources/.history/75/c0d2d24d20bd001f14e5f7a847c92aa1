@@ -1,0 +1,17 @@
+package pack.cap.module9.collection;
+import java.util.*;
+public class ProductCatalog {
+	
+	private LinkedHashSet<Product> products;
+
+	public ProductCatalog() {
+		super();
+		// TODO Auto-generated constructor stub
+		products = new LinkedHashSet<Product>();
+	}
+	
+	public boolean addProduct(Product pro) {
+		return products.add(pro);
+	}
+
+}

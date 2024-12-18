@@ -1,0 +1,22 @@
+package pack.cap.module7.inter;
+
+public class Car implements Vechical {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		System.out.println("Starting engine!");
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		System.out.println("Stop engine!");
+	}
+
+}

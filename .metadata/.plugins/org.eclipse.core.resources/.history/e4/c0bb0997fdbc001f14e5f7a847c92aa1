@@ -1,0 +1,62 @@
+package pack.cap.module9.collection;
+
+import java.util.ArrayList;
+
+/*
+ * Listeiterator 
+ * 1- traversing list in both direction
+ * 2- Modifying element while iterating 
+ * 3- adding new elements during iteration  
+ * Methods - 
+ * hasNext() , next(), remove(), hasPrevious , previous(), add(E,e) , set(E,e)
+ * */
+class Employee1 {
+    private int id;
+    private String name;
+
+    public Employee1(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee1{id=" + id + ", name='" + name + "'}";
+    }
+}
+
+public class ListIteratorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  ArrayList<Employee1> emp = new ArrayList<>();
+  
+  emp.add(new Employee1(101, "Jhon"));
+  emp.add(new Employee1(102,"Sam"));
+  emp.add(new Employee1(103,"Mark"));
+  emp.add(new Employee1(104,"Tim"));
+  emp.add(new Employee1(105,"Martha"));
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	}
+
+}

@@ -1,0 +1,32 @@
+package pack.cap.module6.inter;
+/*
+ * Declare it , instantiate the object , Access and use the object 
+ * */
+
+class Student{
+	String name ; int age ;
+
+	public Student(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	} 
+	public void displayInfo() {
+		System.out.println("Name : "+ name +" Age : "+ age );
+	}
+}
+
+
+
+public class ArrayOfObject {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Student[] stu = new Student[3];
+       
+       stu[0] = new Student("jhon", 23);
+       stu[1] = new Student("maria", 25);
+       stu[02 = new Student("Sam", 26);
+	}
+
+}

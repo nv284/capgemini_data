@@ -1,0 +1,17 @@
+package pack.cap.module7.inter;
+
+
+@FunctionalInterface
+interface SalaryCalculator{
+	
+}
+
+
+public class LambdaSalaryCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

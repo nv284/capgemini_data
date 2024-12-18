@@ -1,0 +1,29 @@
+package pack.cap.module8.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+
+public class ReaderAndWriterDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try {
+	Reader read = new FileReader("D:\\sample.txt");
+	
+	int data = read.read();
+	while(data != -1) {
+		System.out.println((char)data);
+		data= read.read();
+	}
+	System.out.println("\n");
+	System.out.println("Dose sample.txt support mark operation : "+r.markSupported());
+	read.close();
+	
+} catch (FileNotFoundException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}

@@ -1,0 +1,21 @@
+package pack.cap.module8.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.Reader;
+
+public class ReaderAndWriterDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try {
+	Reader r = new FileReader("D:\\sample.txt");
+	
+	
+} catch (FileNotFoundException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}

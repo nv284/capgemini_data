@@ -1,0 +1,62 @@
+package pack.cap.module9.collection;
+
+import java.util.Scanner;
+
+class ExpenseNode{
+	double expenseAmount;
+	String date;
+	ExpenseNode next;
+	public ExpenseNode(double expenseAmount, String date) {
+		super();
+		this.expenseAmount = expenseAmount;
+		this.date = date;
+		this.next = next;
+	}
+	
+}
+
+class ExpenseLinkList{
+	private ExpenseNode head ; 
+	private double totalSpent;
+	public ExpenseLinkList(ExpenseNode head, double totalSpent) {
+		super();
+		this.head = head;
+		this.totalSpent = totalSpent;
+	}
+	
+	public void addExpense(double amount , String date ) {
+		ExpenseNode newExp = new ExpenseNode(amount, date);
+		if(head == null) {
+			head = newExp;
+			
+		}else {
+			ExpenseNode current = head ;
+			while(current.next != null) {
+				current = current.next;
+			}
+			currrent.next = newExp;
+			
+		}totalSpent += amount;
+		
+	}
+	
+	public double getTotalSpent() {
+		return totalSpent;
+	}
+}
+
+
+
+public class ExpenseManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+System.out.println("Welcome to the expense Manager ");
+System.out.println("Enter your Total monthly budget");
+double budget = sc.nextDouble();
+sc.nextLine();
+
+switch()
+
+}

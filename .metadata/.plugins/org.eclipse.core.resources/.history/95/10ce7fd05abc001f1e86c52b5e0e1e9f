@@ -1,0 +1,22 @@
+package pack.cap.module9.collection;
+import java.util.*;
+
+
+public class ArrayListDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList<String> a1 = new ArrayList<String>();
+		a1.add("Mango");a1.add("Apple");a1.add("papaya");a1.add("Banana");
+		System.out.println(a1);
+		
+		System.out.println("Remove element "+ a1.remove(2));
+		System.out.println("After removing : "+a1);
+		
+		System.out.println("Set new element : "+a1.set(2, null));
+		System.out.println("After setting a new element : "+a1);
+		
+	}
+
+}

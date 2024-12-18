@@ -1,0 +1,15 @@
+package pack.cap.module9.collection;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    SortedSet<Student> students = new TreeSet<Student>();
+    
+    
+	}
+
+}

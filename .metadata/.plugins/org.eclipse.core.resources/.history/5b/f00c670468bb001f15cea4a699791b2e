@@ -1,0 +1,18 @@
+package pack.cap.module7.inter;
+
+@FunctionalInterface
+public interface MyfunctionalInterface {
+	
+	void apply(); //SAM
+	
+	//default method 
+	default void deafultMethod() {
+		System.out.println("This is a default method ....");
+	}
+	
+	//static method 
+	static void  staticMethod() {
+		System.out.println("this is a static method .....");
+	}
+
+}

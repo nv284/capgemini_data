@@ -1,0 +1,30 @@
+package pack.cap.module6.inter;
+
+class Employee {
+    int empId;
+    String name;
+    double salary;
+	public Employee(int empId, String name, double salary) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + ", salary=" + salary + "]";
+	}
+    
+    
+    
+}
+
+
+public class EmployeeManagement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

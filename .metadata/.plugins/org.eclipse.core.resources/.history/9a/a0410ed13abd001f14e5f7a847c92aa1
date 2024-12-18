@@ -1,0 +1,15 @@
+package pack.cap.module9.collection;
+
+import java.util.HashMap;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 HashMap<Character, String> hmap = new HashMap<>(); 
+		 hmap.put('V', "Violet");
+		   hmap.put('I', "Indigo");
+		   
+	}
+
+}

@@ -1,0 +1,14 @@
+package pack.cap.module9.collection;
+import java.util.*;
+
+public class LinkedHashSet_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+LinkedHashSet<String> lh = new LinkedHashSet<String>();
+
+
+int size = lh.size(); System.out.println(" size ="+ size);
+	}
+
+}

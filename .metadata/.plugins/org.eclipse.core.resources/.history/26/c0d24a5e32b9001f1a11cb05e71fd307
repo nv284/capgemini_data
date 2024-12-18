@@ -1,0 +1,13 @@
+package pack.cap.module6.inter;
+/*
+ * Array is the part of java.util
+ * sort , equals , copyOf , toString , asList, binarySearch   , fill , deepToString 
+ * */
+public class ArrayClassDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

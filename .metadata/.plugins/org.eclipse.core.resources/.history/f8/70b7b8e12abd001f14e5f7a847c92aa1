@@ -1,0 +1,102 @@
+package pack.cap.module9.collection;
+
+import java.util.HashSet;
+import java.util.Set;
+
+class Account {
+    private int accountId;
+    private String accountHolderName;
+    private double balance;
+    private boolean isActive;
+	public Account(int accountId, String accountHolderName, double balance, boolean isActive) {
+		super();
+		this.accountId = accountId;
+		this.accountHolderName = accountHolderName;
+		this.balance = balance;
+		this.isActive = isActive;
+	}
+	public int getAccountId() {
+		return accountId;
+	}
+	public String getAccountHolderName() {
+		return accountHolderName;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public boolean isActive() {
+		return isActive;
+	}
+    
+	
+
+    // Methods to deposit and withdraw money
+    public void deposit(double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+        }
+    }
+
+    public boolean withdraw(double amount) {
+        if (amount > 0 && this.balance >= amount) {
+            this.balance -= amount;
+            return true;
+        }
+        return false;
+    }
+
+   
+    public void deactivate() {
+        this.isActive = false;
+    }
+}
+
+ class BankingSystem{
+	 private Set<Account> accounts;
+	 public BankingSystem() {
+	        accounts = new HashSet<>();
+	    }
+	 public void addAccount(Account account) {
+		 if(accounts.add(account)) {
+			 System.out.println("account added "+ account);
+		 }else {
+			 System.out.println("account already exists");
+		 }
+	 }
+
+	 public void removeInactiveAccounts() {
+		 accounts.removeIf(account-> !account.isActive());
+		 System.out.println("Removed inactive accounts ");
+	 }
+	 
+	 public void deposit(int accountId, double amount) {
+		 accounts.stream().filter(account-> account.getAccountId() == accountId).findFirst().ifPresent(account-> account.deposit(amount));
+		 System.out.println("Money Deposited : "+ amount + " into account "+ accountId);
+	 }
+	 public void withdraw(int accountId, double amount) {
+		 accounts.stream().filter(account-> account.getAccountId() == accountId).findFirst()
+		 .ifPresent(account-> {if (account.withdraw(amount)){
+			 System.out.println("withdraw "+amount +" from "+ accountId);
+		 }else { System.out.println(" Insufficient funds ");}}
+				 );
+		 System.out.println("Money Deposited : "+ amount + " into account "+ accountId);
+	 }
+	 public void checkBalance(int accountId) {
+		 accounts.stream().filter(account -> account.getAccountId() == accountId).findFirst()
+		 .ifPresentOrElse(account -> System.out.println("balance of account "+ accountId + account.getBalance()),
+				 ()-> System.out.println("Account "+accountId +"not found"));
+	 }
+	 public void showAccountWithMaxBalance() {}
+	 public void showAccountWithMinBalance() {}
+	  public void displayAllAccounts() {}
+	  public void displayAccountsWithBalanceGreaterThan(double amount) {}
+ }
+public class BankingSystemTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankingSystem bankingSystem = new BankingSystem();
+
+	}
+
+}

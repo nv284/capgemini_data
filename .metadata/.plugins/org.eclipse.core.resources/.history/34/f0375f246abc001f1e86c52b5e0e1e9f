@@ -1,0 +1,14 @@
+package pack.cap.module9.collection;
+
+import java.util.Scanner;
+
+public class ExpenseManager {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+System.out.println("Welcome to the expense Manager ");
+System.out.println("Enter your Total monthly budget");
+	}
+
+}

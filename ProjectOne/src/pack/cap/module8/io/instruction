@@ -1,0 +1,38 @@
+
+Benefits of Java I/O Streams
+Abstraction: Java I/O streams abstract the details of how data is transmitted or received, making it easier to handle data operations.
+Efficiency: Streams can handle large amounts of data efficiently through buffering and other optimizations.
+Ease of Use: Java’s I/O classes provide a simple, consistent API that simplifies file reading and writing, or communication over networks.
+Extensibility: The I/O framework is highly extensible, allowing developers to create custom stream classes if needed.
+Cross-platform: Java I/O streams are platform-independent, making them useful for writing cross-platform applications.
+Supports Multiple Sources and Destinations: Streams support a wide range of data sources like files, memory buffers, network sockets, 
+etc.
+Types of Streams
+Byte Streams: Used for reading and writing binary data (e.g., FileInputStream, FileOutputStream).
+Character Streams: Used for reading and writing text data (e.g., FileReader, FileWriter).
+Buffered Streams: These are used to wrap another stream to improve performance by reducing the number of read and write operations (e.g., BufferedReader, BufferedWriter).
+Object Streams: Used for reading and writing objects (e.g., ObjectInputStream, ObjectOutputStream).
+Data Streams: Used to read and write primitive data types (e.g., DataInputStream, DataOutputStream)
+
+
+Limitations of Java I/O Streams
+Performance Overhead: Using streams without buffering can cause performance issues, as each read/write operation may result in
+ multiple disk accesses or network operations. 
+Using BufferedInputStream or BufferedOutputStream can mitigate this.
+Complexity in Handling Exceptions: I/O operations often throw IOException, and it is important to handle exceptions properly, 
+which can make code more complicated.
+Not Suitable for Large, Complex Data Structures: When dealing with very large data structures or complicated object graphs, 
+I/O streams can be inefficient and difficult to manage.
+Character Encoding Issues: If streams are not handled correctly, especially with character streams, issues can arise with character 
+encoding (e.g., UTF-8 vs. ASCII), leading to incorrect data interpretation.
+Blocking Operations: By default, many I/O operations are blocking, which means the program may be halted until an operation 
+completes (e.g., waiting for a file to be read or a network response).
+Limited to Synchronous I/O: Java I/O streams are typically synchronous (i.e., blocking), which means the program execution may be
+ halted while performing I/O operations. While Java NIO (New I/O) can handle non-blocking I/O, classic I/O streams are synchronous.
+Java NIO (New I/O)
+To address some of the limitations of traditional I/O streams, Java introduced NIO (Non-blocking I/O) in JDK 1.4. NIO provides faster,
+ more scalable I/O operations by allowing for non-blocking operations, file channels, memory-mapped files
+
+
+DataInputStream -
+------------------

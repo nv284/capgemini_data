@@ -1,0 +1,15 @@
+package pack.cap.module6.inter;
+
+import java.util.Scanner;
+
+public class OneDArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+
+	}
+
+}

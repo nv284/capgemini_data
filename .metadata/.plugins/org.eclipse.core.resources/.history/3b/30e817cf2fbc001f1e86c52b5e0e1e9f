@@ -1,0 +1,22 @@
+package pack.cap.module8.io;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FilterStreamExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			String filePath= "D:\\sample.txt";
+			
+			FileInputStream fis = new FileInputStream(filePath);
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+}

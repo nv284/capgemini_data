@@ -1,0 +1,40 @@
+package pack.cap.module9.collection;
+/*
+ * Listeiterator 
+ * 1- traversing list in both direction
+ * 2- Modifying element while iterating 
+ * 3- adding new elements during iteration  
+ * Methods - 
+ * hasNext() , next(), remove(), hasPrevious , previous(), add(E,e) , set(E,e)
+ * */
+public class Employee1 {
+    private int id;
+    private String name;
+
+    public Employee1(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{id=" + id + ", name='" + name + "'}";
+    }
+}
+
+public class ListIteratorDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

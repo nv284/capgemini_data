@@ -1,0 +1,37 @@
+package pack.cap.module8.io;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FilterInputStream;
+
+public class FilterStreamExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			String filePath= "D:\\sample.txt";
+			
+			FileInputStream fis = new FileInputStream(filePath);
+			
+			FilterInputStream filter = new BufferedInputStream(fis);
+			
+			int availableBytes = filter.available();
+			System.out.println("Initially , Available bytes :"+availableBytes);
+			
+			filter.read();
+			filter.read();
+			filter.read();
+			
+			int available = filter.available();
+			System.out.println(" Available bytes after reading three bytes  :"+available);
+			filter.close();
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+}

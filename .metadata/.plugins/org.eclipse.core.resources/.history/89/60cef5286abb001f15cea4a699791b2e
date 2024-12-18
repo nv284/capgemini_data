@@ -1,0 +1,16 @@
+package pack.cap.module7.inter;
+
+public class MyClass  {
+	
+	
+	public static double performOperation(double a , double b , MathOperation operation) {
+		return operation.apply(a, b);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	}
+
+	
+
+}

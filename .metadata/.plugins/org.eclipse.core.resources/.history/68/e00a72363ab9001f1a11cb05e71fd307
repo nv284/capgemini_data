@@ -1,0 +1,40 @@
+package pack.cap.module6.inter;
+
+class Employee {
+    int empId;
+    String name;
+    double salary;
+	public Employee(int empId, String name, double salary) {
+		super();
+		this.empId = empId;
+		this.name = name;
+		this.salary = salary;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + ", salary=" + salary + "]";
+	}
+    
+    
+    
+}
+
+
+public class EmployeeManagement {
+
+	
+	public static void printEmp(Employee[] emp) {
+		for(Employee e : emp) {
+			System.out.println(e);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     Employee [] emp = { new Employee(101, "Alice", 250000), 
+		new Employee(102,"Sam",34000),
+		new Employee(103, "David", 50000),new Employee(104, "Eva", 45000)};
+	};
+	System.out.println("Original Employee Data:");
+	printEmp(emp);
+
+}

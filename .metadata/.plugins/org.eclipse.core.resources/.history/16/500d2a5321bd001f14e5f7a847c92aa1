@@ -1,0 +1,12 @@
+package pack.cap.module9.collection;
+
+public class ProductManagmentSystem {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      ProductCatalog catalog = new ProductCatalog();
+      
+      cal
+	}
+
+}

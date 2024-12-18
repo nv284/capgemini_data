@@ -1,0 +1,12 @@
+package pack.cap.module7.inter;
+
+public class PredicateExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Predicate<Integer>
+		
+	}
+
+}

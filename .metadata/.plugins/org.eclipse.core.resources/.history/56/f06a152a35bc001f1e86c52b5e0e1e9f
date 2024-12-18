@@ -1,0 +1,20 @@
+package pack.cap.module8.io;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+
+public class DataInputStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		try(DataOutputStream datOut = new DataOutputStream( new FileOutputStream("D://data.bin"))){
+			
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+}

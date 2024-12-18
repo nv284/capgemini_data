@@ -1,0 +1,17 @@
+package pack.cap.module8.io;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+public class ReadFile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try {
+	FileInputStream fis = new  FileInputStream("D:\\jenkins_command.txt");
+}catch(Exception e ) {
+	System.out.println(e);
+}
+	}
+
+}

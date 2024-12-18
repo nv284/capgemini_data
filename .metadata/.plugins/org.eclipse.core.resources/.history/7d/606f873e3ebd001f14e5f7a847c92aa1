@@ -1,0 +1,78 @@
+package pack.cap.module9.collection;
+
+import java.util.LinkedHashMap;
+public class LinkedHashMapEx1 {
+public static void main(String[] args) 
+{	
+// Create a LinkedHashMap instance.	
+   LinkedHashMap<String, Integer> lhmap = new LinkedHashMap<>();
+
+// Checking the size of linked hash map before adding entries.
+   int size = lhmap.size();
+   System.out.println("Size of LinkedHashMap before adding entries: " +size);
+
+// Checking linked hash map is empty or not before adding entries. 
+   boolean isEmpty = lhmap.isEmpty();
+   System.out.println("Is LinkedHashMap empty: " +isEmpty);
+ 
+// Adding entries in linked hash map. 
+   lhmap.put("John", 30);
+   lhmap.put("Peter", 25);
+   lhmap.put("Ricky", 23);
+   lhmap.put("Deep", 28);
+   lhmap.put("Mark", 32);
+    
+   System.out.println("Display entries in LinkedHashMap");
+   System.out.println(lhmap);
+
+   int size2 = lhmap.size();
+   System.out.println("Size of LinkedHashMap after adding entries: " +size2);
+
+// Adding null as key and value.
+   lhmap.put(null, null);
+   System.out.println(lhmap);
+ }
+Output:
+      Size of LinkedHashMap before adding entries: 0
+      Is LinkedHashMap empty: true
+      Display entries in LinkedHashMap
+      {John=30, Peter=25, Ricky=23, Deep=28, Mark=32}
+      Size of LinkedHashMap after adding entries: 5
+      {John=30, Peter=25, Ricky=23, Deep=28, Mark=32, null=null}
+2. Let’s take a program where we will create LinkedHashMap instance with the third argument of constructor set to true. The mappings En=English, Hi=Hindi, Ta=Tamil, De=German, Fr=French will be inserted into this object and entries will be displayed on the console. Look at the program source code to understand better.
+
+Program code 2:
+
+import java.util.LinkedHashMap;
+public class LinkedHashMapEx2 {
+public static void main(String[] args) 
+{
+  LinkedHashMap<String, String> lhmap = new LinkedHashMap<>(16, 0.75f, true); 
+  lhmap.put("En", "English");
+  lhmap.put("Hi", "Hindi");
+  lhmap.put("Ta", "Tamil");
+  lhmap.put("De", "German");
+  lhmap.put("Fr", "French");
+    
+  System.out.println("Initially, entries in LinkedHashMap lhmap: " +lhmap);
+  System.out.println("Value corresponding to key Hi: " +lhmap.get("Hi"));
+
+  System.out.println("Value corresponding to key En: " +lhmap.get("En"));
+  System.out.println("After accessing entries Hi and En: " +lhmap);
+
+  System.out.println("\n");
+
+  LinkedHashMap<String, String> lhmap2 = new LinkedHashMap<>(16, 0.75f, false); 
+   lhmap2.put("En", "English");
+   lhmap2.put("Hi", "Hindi");
+   lhmap2.put("Ta", "Tamil");
+   lhmap2.put("De", "German");
+   lhmap2.put("Fr", "French");
+
+  System.out.println("Initially, entries in LinkedHashMap lhmap2: " +lhmap2);
+  System.out.println("Value corresponding to key Hi: " +lhmap.get("Hi"));
+ 
+  System.out.println("Value corresponding to key En: " +lhmap.get("En"));
+  System.out.println("After accessing entries Hi and En: " +lhmap2);
+ }
+}

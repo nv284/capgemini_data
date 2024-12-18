@@ -1,0 +1,25 @@
+interface - it is a reference type , similar to a class ,can contain only constants and abstract methods .
+            interface A ---extends---> interface B    , interface A ---implements ---- class A
+            
+            flexiblity , readable code , moduler code / loose coupling 
+            
+            
+       uses of interface - 
+       1) Achieving abstraction (100%)
+       2)Multiple inheritance -
+       3)Loose coupling  
+       
+       
+       types of interface - 
+       1- regular interface 
+       2- Default interface (from java 8 -> default methods )
+       3- Static interface ( from java 8 -> static methods)
+       4- functional interface ( from java 8 )
+       
+       interface A {
+       int x = 100; ------compiler add---> public static final int x 
+       void m1();-----------compiler ----> public and abstract 
+       void m2();
+       }
+       ================================
+       

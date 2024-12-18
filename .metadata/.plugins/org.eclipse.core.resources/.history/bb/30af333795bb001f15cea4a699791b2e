@@ -1,0 +1,54 @@
+package pack.cap.module7.inter;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.stream.IntStream;
+
+public class EmployeeSalaryProcessing {
+    public static void main(String[] args) {
+
+        // Step 1: Define an array of employee salaries
+        int[] employeeSalaries = {28000, 40000, 75000, 120000, 35000, 29000, 55000, 38000, 47000, 64000};
+
+        // Step 2: Find employees with salary less than 40000
+        System.out.println("Employees with salary less than 40000:");
+        IntStream.of(employeeSalaries)
+                .filter(salary -> salary < 40000)
+                .forEach(salary -> System.out.println("Salary: " + salary));
+
+        // Step 3: Find employees earning more than 75000
+        System.out.println("\nEmployees earning more than 75000:");
+        IntStream.of(employeeSalaries)
+                .filter(salary -> salary > 75000)
+                .forEach(salary -> System.out.println("Salary: " + salary));
+
+        // Step 4: Provide a 10% increment for employees with salary near 35000 (between 33000 and 37000)
+        System.out.println("\nEmployees with incremented salary (10% for those earning near 35000):");
+        IntStream.of(employeeSalaries)
+                .map(salary -> {
+                    if (salary >= 33000 && salary <= 37000) {
+                        return (int) (salary * 1.1);  // Giving a 10% increment
+                    }
+                    return salary;
+                })
+                .forEach(salary -> System.out.println("Updated Salary: " + salary));
+
+        // Step 5: Calculate the average salary
+        double averageSalary = IntStream.of(employeeSalaries)
+                                        .average()
+                                        .orElse(0.0);
+        System.out.println("\nAverage Salary: " + averageSalary);
+
+        // Step 6: Calculate the company's yearly turnover (Average Salary * number of employees)
+        double yearlyTurnover = averageSalary * employeeSalaries.length;
+        System.out.println("Company Yearly Turnover: " + yearlyTurnover);
+
+        // Step 7: Arrange salaries in descending order
+        System.out.println("\nSalaries in Descending Order:");
+        Arrays.stream(employeeSalaries)
+              .boxed()  // Convert to Integer to use Comparator
+              .sorted(Comparator.reverseOrder())  // Sort in descending order
+              .forEach(salary -> System.out.println("Salary: " + salary));
+    }
+}
+

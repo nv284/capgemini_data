@@ -1,0 +1,17 @@
+package pack.cap.module9.collection;
+ class BankingSystem{
+	 private Set<Account> accounts;
+	 public BankingSystem() {
+	        accounts = new HashSet<>();
+	    }
+
+ }
+public class BankingSystemTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankingSystem bankingSystem = new BankingSystem();
+
+	}
+
+}

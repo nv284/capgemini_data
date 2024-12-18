@@ -1,0 +1,25 @@
+package pack.cap.module7.inter;
+import java.util.function.*;
+
+public class PredicateExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Predicate<Integer> isEven = (num) ->num%2 == 0;
+		
+		Predicate<Integer> isGreaterThen  = (num) ->num > 100 ;
+		
+		
+		//combined predicate 
+		Predicate<Integer> isEvenAndGreaterThen  =  isEven.and(isGreaterThen);
+		
+		//combined predicate with or 
+		Predicate<Integer> isEvenAndGreaterThenHundred  =  isEven.or(isGreaterThen);
+		
+		Predicate<Integer> isNotEven =  isEven.negate();
+		
+		
+	}
+
+}

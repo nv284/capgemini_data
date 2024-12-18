@@ -1,0 +1,14 @@
+package pack.cap.module9.collection;
+
+import java.util.HashSet;
+
+public class HashSetDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+HashSet<String> set = new HashSet<String>();
+set.add("First");set.add("Second");set.add("Third");set.add("Fourth");set.add("Five");
+set.add("First");set.add("Five");
+	}
+
+}

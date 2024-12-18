@@ -1,0 +1,26 @@
+package pack.cap.module7.inter;
+
+public class MyClass implements MyfunctionalInterface {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyClass m1 = new MyClass();
+		m1.apply();
+		m1.show();
+		m1.deafultMethod();
+		MyfunctionalInterface.staticMethod();
+	}
+
+	@Override
+	public void apply() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

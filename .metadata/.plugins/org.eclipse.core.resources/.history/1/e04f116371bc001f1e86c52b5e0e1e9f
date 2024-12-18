@@ -1,0 +1,18 @@
+package pack.cap.module9.collection;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+public class VectorVsArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Vector<String> v = new Vector<String>();
+       ArrayList<String> al = new ArrayList<String>();
+       
+       System.out.println(" Adding element to Vector and ArrayList");
+       v.add("Apple");
+       v.add("Ban)
+	}
+
+}

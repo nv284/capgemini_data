@@ -1,0 +1,18 @@
+package pack.cap.module8.io;
+
+import java.io.IOException;
+
+public class PrintWriterAndReaderclass {
+
+	String s = "D:\\sample.txt";
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try {
+	
+}catch (Exception e) {
+	// TODO: handle exception
+	e.printStackTrace();
+}
+	}
+
+}
